@@ -3,18 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git stage('Checkout') {
-    steps {
-        git stage('Checkout') {
-    steps {
-        git 'https://github.com/YuvaMurugan/employee-management.git'
-}
-    }
-}
-        }
-
         stage('Install Dependencies') {
             steps {
                 bat 'python -m venv venv'
@@ -36,7 +24,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Build artifact generated successfully'
+                echo 'Build completed successfully'
             }
         }
 
