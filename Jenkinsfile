@@ -5,8 +5,14 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/employee-management.git'
-            }
+                git stage('Checkout') {
+    steps {
+        git stage('Checkout') {
+    steps {
+        git 'https://github.com/YuvaMurugan/employee-management.git'
+}
+    }
+}
         }
 
         stage('Install Dependencies') {
