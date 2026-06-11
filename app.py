@@ -24,5 +24,3 @@ def home():
     return {
         "message": "Employee API Running"
     }
-    
-       
